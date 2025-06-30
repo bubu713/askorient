@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>askorient - Professional Divination Platform | 专业占卜平台</title>
+    <meta name="description" content="Professional divination platform combining Eastern mystical wisdom with Western astrology, offering Zi Wei Dou Shu, I-Ching, and horoscope services">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-oVDH0C_j.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C1PjeDga.css">
+</head>
+<body class="mystical-bg text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">A</span>
+                    </div>
+                    <span class="text-xl font-bold gradient-text">askorient</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-white/80 hover:text-white transition-colors">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-zh hidden">首页</span>
+                    </a>
+                    <a href="#features" class="nav-link text-white/80 hover:text-white transition-colors">
+                        <span class="lang-en">Features</span>
+                        <span class="lang-zh hidden">特色</span>
+                    </a>
+                    <a href="#how-it-works" class="nav-link text-white/80 hover:text-white transition-colors">
+                        <span class="lang-en">How It Works</span>
+                        <span class="lang-zh hidden">原理</span>
+                    </a>
+                    <a href="#pricing" class="nav-link text-white/80 hover:text-white transition-colors">
+                        <span class="lang-en">Pricing</span>
+                        <span class="lang-zh hidden">定价</span>
+                    </a>
+                    <a href="#faq" class="nav-link text-white/80 hover:text-white transition-colors">
+                        <span class="lang-en">FAQ</span>
+                        <span class="lang-zh hidden">FAQ</span>
+                    </a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button id="langToggle" class="text-sm px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                        <span class="lang-en">中文</span>
+                        <span class="lang-zh hidden">English</span>
+                    </button>
+                    <button class="md:hidden text-white" id="mobileMenuToggle">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-black/90 backdrop-blur-md border-t border-white/10">
+            <div class="px-4 py-4 space-y-4">
+                <a href="#home" class="block text-white/80 hover:text-white transition-colors">
+                    <span class="lang-en">Home</span>
+                    <span class="lang-zh hidden">首页</span>
+                </a>
+                <a href="#features" class="block text-white/80 hover:text-white transition-colors">
+                    <span class="lang-en">Features</span>
+                    <span class="lang-zh hidden">特色</span>
+                </a>
+                <a href="#how-it-works" class="block text-white/80 hover:text-white transition-colors">
+                    <span class="lang-en">How It Works</span>
+                    <span class="lang-zh hidden">原理</span>
+                </a>
+                <a href="#pricing" class="block text-white/80 hover:text-white transition-colors">
+                    <span class="lang-en">Pricing</span>
+                    <span class="lang-zh hidden">定价</span>
+                </a>
+                <a href="#faq" class="block text-white/80 hover:text-white transition-colors">
+                    <span class="lang-en">FAQ</span>
+                    <span class="lang-zh hidden">FAQ</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center star-field">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-mystery-900/50"></div>
+        <div class="container-custom text-center relative z-10">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    <span class="lang-en">
+                        <span class="gradient-text">Divine</span> Wisdom<br>
+                        <span class="text-white/90">Professional Divination</span>
+                    </span>
+                    <span class="lang-zh hidden">
+                        <span class="gradient-text">天机</span>问卜<br>
+                        <span class="text-white/90">智慧占卜</span>
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
+                    <span class="lang-en">Combining Eastern Zi Wei Dou Shu, I-Ching with Western Astrology for professional divination</span>
+                    <span class="lang-zh hidden">结合东方紫微斗数、易经与西方星座学，为您提供最专业的占卜服务</span>
+                </p>
+                
+                <!-- Divination Form -->
+                <div class="max-w-2xl mx-auto mb-12">
+                    <div class="card animate-slide-up">
+                        <h3 class="text-2xl font-semibold mb-6 gradient-text">
+                            <span class="lang-en">Start Your Divination Journey</span>
+                            <span class="lang-zh hidden">开始您的占卜之旅</span>
+                        </h3>
+                        <form id="divinationForm" class="space-y-6">
+                            <div>
+                                <label class="block text-left text-white/80 mb-2">
+                                    <span class="lang-en">What question would you like to ask?</span>
+                                    <span class="lang-zh hidden">您想问什么问题？</span>
+                                </label>
+                                <textarea 
+                                    id="question" 
+                                    rows="4" 
+                                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                                    placeholder="Please describe your question in detail, and we will provide you with the most accurate divination results..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full text-lg">
+                                <span class="lang-en">🔮 Begin Divination</span>
+                                <span class="lang-zh hidden">🔮 开始占卜</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divination Result Modal -->
+    <div id="resultModal" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="bg-mystery-800 rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto mystical-border" style="padding: 2px;">
+                <div class="bg-mystery-800 rounded-2xl p-8">
+                    <div class="text-right mb-4">
+                        <button id="closeModal" class="text-white/60 hover:text-white text-2xl">&times;</button>
+                    </div>
+                    
+                    <div id="resultContent" class="space-y-6">
+                        <!-- Results will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Modal -->
+    <div id="loadingModal" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="card text-center">
+                <div class="w-16 h-16 mx-auto mb-4 relative">
+                    <div class="absolute inset-0 border-4 border-blue-500/30 rounded-full"></div>
+                    <div class="absolute inset-0 border-4 border-blue-500 rounded-full border-t-transparent animate-spin"></div>
+                </div>
+                <p class="text-xl font-semibold gradient-text mb-2">
+                    <span class="lang-en">Reading the Divine Signs</span>
+                    <span class="lang-zh hidden">正在解读天机</span>
+                </p>
+                <p class="text-white/70 loading-dots">
+                    <span class="lang-en">Please wait</span>
+                    <span class="lang-zh hidden">请稍候</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="bg-mystery-800 rounded-2xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto mystical-border" style="padding: 2px;">
+                <div class="bg-mystery-800 rounded-2xl p-8">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-2xl font-bold gradient-text">
+                            <span class="lang-en">Choose Payment Method</span>
+                            <span class="lang-zh hidden">选择支付方式</span>
+                        </h2>
+                        <button id="closePaymentModal" class="text-white/60 hover:text-white text-2xl">&times;</button>
+                    </div>
+                    
+                    <div id="paymentContent" class="space-y-6">
+                        <!-- Payment content will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding">
+        <div class="container-custom">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+                <span class="lang-en">Why Choose askorient</span>
+                <span class="lang-zh hidden">为什么选择askorient</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">🌟</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">
+                        <span class="lang-en">East Meets West</span>
+                        <span class="lang-zh hidden">中西结合</span>
+                    </h3>
+                    <p class="text-white/70">
+                        <span class="lang-en">Integrating Zi Wei Dou Shu, I-Ching with Western astrology for comprehensive insights</span>
+                        <span class="lang-zh hidden">融合紫微斗数、易经八卦与西方星座学，提供全方位占卜视角</span>
+                    </p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">🧠</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">
+                        <span class="lang-en">Intelligent Analysis</span>
+                        <span class="lang-zh hidden">智能分析</span>
+                    </h3>
+                    <p class="text-white/70">
+                        <span class="lang-en">Advanced algorithms combined with traditional divination wisdom for accurate personalized readings</span>
+                        <span class="lang-zh hidden">运用先进算法，结合传统占卜智慧，提供精准个性化解读</span>
+                    </p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">
+                        <span class="lang-en">Professional Accuracy</span>
+                        <span class="lang-zh hidden">专业精准</span>
+                    </h3>
+                    <p class="text-white/70">
+                        <span class="lang-en">Guided by experienced diviners to ensure professional standards and practical value</span>
+                        <span class="lang-zh hidden">资深占卜师指导算法，确保每次占卜都具有专业水准和实用价值</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section-padding bg-white/5">
+        <div class="container-custom">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+                <span class="lang-en">How It Works</span>
+                <span class="lang-zh hidden">占卜原理</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-4">
+                        <span class="lang-en">Ask Question</span>
+                        <span class="lang-zh hidden">提出问题</span>
+                    </h3>
+                    <p class="text-white/70">
+                        <span class="lang-en">Describe your question or confusion in detail</span>
+                        <span class="lang-zh hidden">详细描述您的困惑或想了解的问题</span>
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-4">
+                        <span class="lang-en">Intelligent Analysis</span>
+                        <span class="lang-zh hidden">智能分析</span>
+                    </h3>
+                    <p class="text-white/70">
+                        <span class="lang-en">System combines multiple divination methods for deep analysis</span>
+                        <span class="lang-zh hidden">系统结合多种占卜方法进行深度分析</span>
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-4">
+                        <span class="lang-en">Generate Results</span>
+                        <span class="lang-zh hidden">生成结果</span>
+                    </h3>
+                    <p class="text-white/70">
+                        <span class="lang-en">Generate professional divination report combining various factors</span>
+                        <span class="lang-zh hidden">综合各种因素生成专业占卜报告</span>
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center text-2xl font-bold">4</div>
+                    <h3 class="text-xl font-semibold mb-4">
+                        <span class="lang-en">Guidance</span>
+                        <span class="lang-zh hidden">指导建议</span>
+                    </h3>
+                    <p class="text-white/70">
+                        <span class="lang-en">Provide specific action advice and life guidance</span>
+                        <span class="lang-zh hidden">提供具体的行动建议和人生指导</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+                <span class="lang-en">User Testimonials</span>
+                <span class="lang-zh hidden">用户见证</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold mr-4">L</div>
+                        <div>
+                            <h4 class="font-semibold">Lisa Chen</h4>
+                            <p class="text-white/60 text-sm">
+                                <span class="lang-en">Business Executive</span>
+                                <span class="lang-zh hidden">企业高管</span>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-white/80">
+                        <span class="lang-en">"askorient divination is incredibly accurate, helping me make the right decisions in my career. The East-West combined analysis gives me fresh perspectives."</span>
+                        <span class="lang-zh hidden">"askorient的占卜非常准确，帮助我在职业发展中做出了正确的决策。特别是中西结合的分析方式，让我获得了全新的视角。"</span>
+                    </p>
+                    <div class="flex text-gold-400 mt-4">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-400 rounded-full flex items-center justify-center text-white font-bold mr-4">M</div>
+                        <div>
+                            <h4 class="font-semibold">Marcus Johnson</h4>
+                            <p class="text-white/60 text-sm">
+                                <span class="lang-en">Entrepreneur</span>
+                                <span class="lang-zh hidden">创业者</span>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-white/80">
+                        <span class="lang-en">"As an entrepreneur, I often face important decisions. askorient's divination advice always inspires me and helps me find the best direction."</span>
+                        <span class="lang-zh hidden">"作为创业者，我经常面临重要抉择。askorient提供的占卜建议总是能给我启发，帮助我找到最佳的发展方向。"</span>
+                    </p>
+                    <div class="flex text-gold-400 mt-4">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-bold mr-4">S</div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Wang</h4>
+                            <p class="text-white/60 text-sm">
+                                <span class="lang-en">Psychologist</span>
+                                <span class="lang-zh hidden">心理咨询师</span>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-white/80">
+                        <span class="lang-en">"I was initially cautious about divination, but askorient's professionalism impressed me. It's not only accurate but also provides practical life advice."</span>
+                        <span class="lang-zh hidden">"我本身对占卜持谨慎态度，但askorient的专业性让我印象深刻。它不仅准确，还能提供实用的人生建议。"</span>
+                    </p>
+                    <div class="flex text-gold-400 mt-4">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-padding bg-white/5">
+        <div class="container-custom">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+                <span class="lang-en">Choose Your Plan</span>
+                <span class="lang-zh hidden">选择您的套餐</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span class="lang-en">Basic</span>
+                        <span class="lang-zh hidden">基础版</span>
+                    </h3>
+                    <div class="text-4xl font-bold mb-6 gradient-text">
+                        <span class="lang-en">$2.99</span>
+                        <span class="lang-zh hidden">¥19</span>
+                        <span class="text-lg text-white/60 font-normal">/
+                            <span class="lang-en">reading</span>
+                            <span class="lang-zh hidden">次</span>
+                        </span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-white/80">
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Basic divination analysis</span>
+                            <span class="lang-zh hidden">基础占卜分析</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Fortune rating</span>
+                            <span class="lang-zh hidden">运势评级</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Brief advice</span>
+                            <span class="lang-zh hidden">简要建议</span>
+                        </li>
+                    </ul>
+                    <button class="btn-secondary w-full payment-btn" data-plan="basic">
+                        <span class="lang-en">Choose Basic</span>
+                        <span class="lang-zh hidden">选择基础版</span>
+                    </button>
+                </div>
+                
+                <div class="card relative border-2 border-gold-500">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold-500 text-mystery-900 px-4 py-1 rounded-full text-sm font-semibold">
+                        <span class="lang-en">Popular</span>
+                        <span class="lang-zh hidden">推荐</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span class="lang-en">Professional</span>
+                        <span class="lang-zh hidden">专业版</span>
+                    </h3>
+                    <div class="text-4xl font-bold mb-6 gradient-text">
+                        <span class="lang-en">$6.99</span>
+                        <span class="lang-zh hidden">¥49</span>
+                        <span class="text-lg text-white/60 font-normal">/
+                            <span class="lang-en">reading</span>
+                            <span class="lang-zh hidden">次</span>
+                        </span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-white/80">
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Deep divination analysis</span>
+                            <span class="lang-zh hidden">深度占卜分析</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Multi-dimensional fortune reading</span>
+                            <span class="lang-zh hidden">多维度运势解读</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Detailed do's and don'ts</span>
+                            <span class="lang-zh hidden">详细宜忌指导</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Future action advice</span>
+                            <span class="lang-zh hidden">未来行动建议</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary w-full payment-btn" data-plan="professional">
+                        <span class="lang-en">Choose Professional</span>
+                        <span class="lang-zh hidden">选择专业版</span>
+                    </button>
+                </div>
+                
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span class="lang-en">Master</span>
+                        <span class="lang-zh hidden">大师版</span>
+                    </h3>
+                    <div class="text-4xl font-bold mb-6 gradient-text">
+                        <span class="lang-en">$13.99</span>
+                        <span class="lang-zh hidden">¥99</span>
+                        <span class="text-lg text-white/60 font-normal">/
+                            <span class="lang-en">reading</span>
+                            <span class="lang-zh hidden">次</span>
+                        </span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-white/80">
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Master-level analysis</span>
+                            <span class="lang-zh hidden">大师级占卜分析</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Comprehensive fortune report</span>
+                            <span class="lang-zh hidden">全方位运势报告</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Personalized solutions</span>
+                            <span class="lang-zh hidden">个性化解决方案</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">Long-term fortune trends</span>
+                            <span class="lang-zh hidden">长期运势趋势</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-400 mr-2">✓</span>
+                            <span class="lang-en">24-hour response</span>
+                            <span class="lang-zh hidden">24小时内回复</span>
+                        </li>
+                    </ul>
+                    <button class="btn-secondary w-full payment-btn" data-plan="master">
+                        <span class="lang-en">Choose Master</span>
+                        <span class="lang-zh hidden">选择大师版</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding">
+        <div class="container-custom">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+                <span class="lang-en">Frequently Asked Questions</span>
+                <span class="lang-zh hidden">常见问题</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-4">
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <span class="text-xl font-semibold">
+                                <span class="lang-en">How accurate is askorient divination?</span>
+                                <span class="lang-zh hidden">askorient的占卜准确度如何？</span>
+                            </span>
+                            <span class="text-2xl">+</span>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-white/80">
+                            <span class="lang-en">We combine traditional Eastern mystical wisdom with modern technology, trained on extensive historical data and guided by professional diviners, ensuring high accuracy with over 95% user satisfaction.</span>
+                            <span class="lang-zh hidden">我们结合了传统东方玄学智慧与现代技术，通过大量历史数据训练和专业占卜师指导，确保高度准确性。我们的用户满意度超过95%。</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <span class="text-xl font-semibold">
+                                <span class="lang-en">How long does it take to get results?</span>
+                                <span class="lang-zh hidden">占卜结果多久能出来？</span>
+                            </span>
+                            <span class="text-2xl">+</span>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-white/80">
+                            <span class="lang-en">Basic divination results are generated within 30 seconds, while Professional and Master versions may take 1-2 minutes for deeper analysis. We guarantee the highest quality divination service.</span>
+                            <span class="lang-zh hidden">基本占卜结果会在30秒内生成，专业版和大师版可能需要1-2分钟进行更深入的分析。我们保证提供最高质量的占卜服务。</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <span class="text-xl font-semibold">
+                                <span class="lang-en">Is my personal information secure?</span>
+                                <span class="lang-zh hidden">我的个人信息安全吗？</span>
+                            </span>
+                            <span class="text-2xl">+</span>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-white/80">
+                            <span class="lang-en">We use bank-level encryption technology to protect your privacy. All divination questions and results are encrypted and will never be disclosed to third parties.</span>
+                            <span class="lang-zh hidden">我们采用银行级别的加密技术保护您的隐私。所有占卜问题和结果都经过加密处理，绝不会泄露给第三方。</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <span class="text-xl font-semibold">
+                                <span class="lang-en">What payment methods do you support?</span>
+                                <span class="lang-zh hidden">支持哪些付款方式？</span>
+                            </span>
+                            <span class="text-2xl">+</span>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-white/80">
+                            <span class="lang-en">We support Alipay, WeChat Pay, UnionPay, and international credit cards (Visa, MasterCard, American Express) among other payment methods.</span>
+                            <span class="lang-zh hidden">我们支持支付宝、微信支付、银联卡以及国际信用卡（Visa、MasterCard、American Express）等多种支付方式。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mystery-900 border-t border-white/10 section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">A</span>
+                        </div>
+                        <span class="text-xl font-bold gradient-text">askorient</span>
+                    </div>
+                    <p class="text-white/70 mb-4">
+                        <span class="lang-en">Professional divination platform combining Eastern and Western wisdom for accurate life guidance.</span>
+                        <span class="lang-zh hidden">专业的占卜平台，结合东西方智慧，为您提供最准确的人生指导。</span>
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white/60 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white/60 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">
+                        <span class="lang-en">Services</span>
+                        <span class="lang-zh hidden">服务</span>
+                    </h3>
+                    <ul class="space-y-2 text-white/70">
+                        <li><a href="#" class="hover:text-white transition-colors">
+                            <span class="lang-en">Professional Divination</span>
+                            <span class="lang-zh hidden">专业占卜</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">
+                            <span class="lang-en">Horoscope</span>
+                            <span class="lang-zh hidden">星座运势</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">
+                            <span class="lang-en">Zi Wei Dou Shu</span>
+                            <span class="lang-zh hidden">紫微斗数</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">
+                            <span class="lang-en">I-Ching</span>
+                            <span class="lang-zh hidden">易经占卜</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">
+                        <span class="lang-en">Support</span>
+                        <span class="lang-zh hidden">支持</span>
+                    </h3>
+                    <ul class="space-y-2 text-white/70">
+                        <li><a href="#faq" class="hover:text-white transition-colors">
+                            <span class="lang-en">FAQ</span>
+                            <span class="lang-zh hidden">常见问题</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">
+                            <span class="lang-en">Contact Us</span>
+                            <span class="lang-zh hidden">联系我们</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">
+                            <span class="lang-en">Privacy Policy</span>
+                            <span class="lang-zh hidden">隐私政策</span>
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">
+                            <span class="lang-en">Terms of Service</span>
+                            <span class="lang-zh hidden">服务条款</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-zh hidden">联系方式</span>
+                    </h3>
+                    <ul class="space-y-2 text-white/70">
+                        <li>
+                            <span class="lang-en">Email: </span>
+                            <span class="lang-zh hidden">邮箱：</span>
+                            <a href="mailto:cygnusm713@gmail.com" class="text-blue-400 hover:text-blue-300">cygnusm713@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="lang-en">Hours: 24/7 Online Service</span>
+                            <span class="lang-zh hidden">工作时间：24/7 在线服务</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 text-center text-white/60">
+                <p>&copy; 2024 askorient. 
+                    <span class="lang-en">All rights reserved</span>
+                    <span class="lang-zh hidden">版权所有</span>
+                    | 
+                    <span class="lang-en">Professional Divination Platform</span>
+                    <span class="lang-zh hidden">专业占卜平台</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
