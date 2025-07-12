@@ -1,6 +1,6 @@
 import './style.css'
 import { DivinationEngine } from './divination.js'
-// 444 55 666
+// 444 55 666 777
 class CygnusApp {
     constructor() {
         this.currentLang = 'en'  // Changed default to English
